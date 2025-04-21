@@ -8,91 +8,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left">
-                <a href="#about-section">Bien Barbachano</a>
+    <div id="MySidenav" class="sidenav">
+        <div class="headshot">
+            <img src="images/headshot.jpg" alt="headshot">
+            <div class="text-right">
+                <p>Bien Barbachano</p>
+                <p>DevOps Engineer</p>
             </div>
-            <div class="right">
-                <a href="#about-section">About</a>
-                <a href="#skills-section">Skills</a>
-                <a href="#projects-section">Projects</a>
-                <a href="#contact-section">Contact Me!</a>
-            </div>
-        </nav>
-    </header>
-    <section id="about-section">
-        <div class="self-photo">
-            <picture>
-                <img src="https://img.freepik.com/premium-vector/default-avatar-profile-icon-social-media-user-image-gray-avatar-icon-blank-profile-silhouette-vector-illustration_561158-3383.jpg" alt="self-photo">
-            </picture>
         </div>
-        <div class="intro">
-            <p>Hey! I'm <span>Bien</span>, a recent graduate who's interested in learning more about software development, AI, and devops.
-                With a background in computer science, I'm well equipped with technial skillsets and an eagerness to try new things!
-            </p>
-            <br>
-            <p>
-                Outside of being a CS graduate, I enjoy playing volleyball, being a gym instructor, watching anime, and cooking!
-            </p>
+        <a href="#about-section"><i class="fa-solid fa-user"></i>About</a>
+        <a href="#tools-section"><i class="fa-solid fa-screwdriver-wrench"></i>Tools</a>
+        <a href="#projects-section"><i class="fa-solid fa-diagram-project"></i>Projects</a>
+        <a href="#contact-section"><i class="fa-solid fa-message"></i>Contact</a>
+    </div>
+    <section id="about-section-left">
+        <div class="profile">
+            <h1><span class="greeting">Hey!</span> I'm <span class="name">Bien</span></h1>
+            <p>A computer science undergraduate 
+            <br>learning<span class="skill">Web Development & DevOps</span>.</p>
         </div>
         <div class="socials">
-            <a href="https://www.instagram.com/bien.resf/" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/bien-barbachano-0643a3271/" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://github.com/Trixxx12" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-instagram"></i>
         </div>
+        <div class="resume">
+            <button type="button">Resume</button>
+        </div>
+        <h2>About Me</h2>
+        <p>I'm a computer science undergraduate currently building projects to deepen my understanding of the tools I’m learning.</p>
+        <br>
+        <p>My interest in game and web development began in high school, where seeing real-time results of my code sparked my passion for creating.</p>
+        <br>
+        <p>Right now, I'm focused on building websites using foundational skills, version control with Git/GitHub, CI/CD pipelines, containerization, cloud hosting, and basic security practices.
+            My goal is to become a DevOps Engineer, so I aim to create projects that bring everything together—while learning one tool or language at a time.</p>
+    </section>
+    <section id="tools-section-left">
+        <h2>What I work with</h2>
+        <div class="fa-icons">
+            <i class="fa-brands fa-html5">HTML</i>
+            <i class="fa-brands fa-python">Python</i>
+            <i class="fa-brands fa-css3-alt">CSS</i>
+            <i class="fa-brands fa-docker">Docker</i>
+            <i class="fa-brands fa-aws">AWS</i>
+            <i class="fa-brands fa-linux">Linux</i>
+            <i class="fa-solid fa-database">MySQL</i>
+            <i class="fa-brands fa-git">Git</i>
+        </div>
+    </section>
+    <section id="projects-section-left">
+        <h2>My Personal Projects</h2>
+
     </section>
     
-    <section id="skills-section">
-        <h2>Skills Learned</h2>
-        <div class="skills">
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-docker"></i>
-            <i class="fa-brands fa-linux"></i>
-            <i class="fa-brands fa-aws"></i>
-            <i class="fa-brands fa-git"></i>
-        </div>
-
-    </section>
-    <section id="projects-section">
-        <h2>Projects</h2>
-        <nav>
-            <a href="#Project1">Project1</a>
-            <a href="#Project1">Project2</a>
-            <a href="#Project1">Project3</a>
-
-        </nav>
-    </section>
-    <section id="contact-section">
-        <div class="message">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">E-mail:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea>
-        <div class="button"> 
-            <br><button type="submit">Send</button></br>
-        </div>  
-        </form>
-        </div>
-    </section>
-
 </body>
 </html>
